@@ -1,0 +1,97 @@
+{
+  "features": [
+    "pm25",
+    "pm10",
+    "no2",
+    "so2",
+    "co",
+    "temperature",
+    "humidity",
+    "wind_speed",
+    "rainfall",
+    "visibility",
+    "month",
+    "day_of_week",
+    "is_weekend"
+  ],
+  "regression_results": {
+    "Linear Regression": {
+      "mae": 7.93,
+      "rmse": 10.35,
+      "r2": 0.9914
+    },
+    "Random Forest": {
+      "mae": 10.04,
+      "rmse": 12.52,
+      "r2": 0.9874
+    },
+    "Gradient Boosting": {
+      "mae": 9.43,
+      "rmse": 12.03,
+      "r2": 0.9884
+    }
+  },
+  "classification_results": {
+    "Logistic Regression": {
+      "accuracy": 0.9406
+    },
+    "Random Forest": {
+      "accuracy": 0.9452
+    }
+  },
+  "confusion_matrix": [
+    [
+      39,
+      3,
+      0
+    ],
+    [
+      5,
+      79,
+      1
+    ],
+    [
+      0,
+      3,
+      89
+    ]
+  ],
+  "feature_importance": {},
+  "monthly_avg_aqi": {
+    "1": 341.8,
+    "2": 227.6,
+    "3": 162.6,
+    "4": 130.3,
+    "5": 126.9,
+    "6": 139.7,
+    "7": 82.0,
+    "8": 77.9,
+    "9": 161.2,
+    "10": 227.3,
+    "11": 344.0,
+    "12": 341.0
+  },
+  "risk_distribution": {
+    "0": 236,
+    "1": 411,
+    "2": 448
+  },
+  "location_avg_aqi": {
+    "Anand Vihar": 191.2,
+    "Dwarka": 186.3,
+    "Gurugram": 204.4,
+    "ITO": 203.6,
+    "Noida": 196.8,
+    "RK Puram": 183.4,
+    "Rohini": 210.7
+  },
+  "location_map": {
+    "Anand Vihar": 0,
+    "ITO": 1,
+    "RK Puram": 2,
+    "Rohini": 3,
+    "Dwarka": 4,
+    "Noida": 5,
+    "Gurugram": 6
+  }
+}
